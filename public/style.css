@@ -1,4 +1,31 @@
 #app, body, html {
     margin: 0;
     height: 100%;
+    background-color: rgb(1, 1, 1);
+}
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table {
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.row {
+    display: flex;
+    gap: .7rem
+}
+
+.square {
+    height: 7rem;
+    width: 7rem;
+    background-color: lightgray;
+    box-sizing: border-box;
 }
