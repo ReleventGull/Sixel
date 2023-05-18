@@ -7,7 +7,9 @@ const App = () => {
     const [keyboard, setKeyboard] = useState([`${'Q W E R T Y U I O P'}`.split(' '), `A S D F G H J K L`.split(' '), 'ENTER Z X C V B N M BACKSPACE'.split(' ')])
     console.log(keyboard)
     return (
-        <>
+        <div className="mainContainer">
+
+        
             <div className="table">
             {rowsCol.map(it => 
                 <div className="row">
@@ -21,14 +23,14 @@ const App = () => {
                     {keyboard.map(it =>
                     <div className="keyRow"> 
                         {it.map(it2 => 
-                            <div className="letterKey"><h1>{it2}</h1></div>
+                            <div className="letterKey"><h3 >{it2}</h3 ></div>
                             
                             )}
 
                     </div>
                         )}
             </div>
-        </>
+            </div>
     )
 }
 
