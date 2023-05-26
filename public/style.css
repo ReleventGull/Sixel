@@ -3,20 +3,21 @@
     height: 100%;
     background-color: rgb(1, 1, 1);
 }
-#app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+@font-face {
+    font-family: libre;
+    src: url(./fonts/LibreFranklin-Bold.ttf);
 }
-
+#app {
+    display: grid;
+    place-items: center;
+}
 .table {
-    min-height: 5rem;
+    padding: 10px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
 
 .row {
     display: flex;
@@ -24,8 +25,45 @@
 }
 
 .square {
-    height: 7rem;
-    width: 7rem;
+    height: 4rem;
+    width: 4rem;
     background-color: lightgray;
     box-sizing: border-box;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.keyRow {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.letterKey {
+    box-sizing: border-box;
+    min-width: 3rem;
+    padding: 1rem;
+    height: 4rem;
+    text-align: center;
+    color: white;
+    background-color: rgb(84, 83, 83);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-family: libre;
+    cursor: pointer;
+}
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
 }
