@@ -26,6 +26,15 @@ const wordContainsLetter = (letter) => {
     }
 }
 
+export const wordChecker = (guess) => {
+    if (word_list.includes(guess)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
 // work out how to check for each letter later
 const letterChecker = (guessArray) => { // should it take a string or array of each individual letter?
     // const firstLetter = string[0];
