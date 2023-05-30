@@ -4,7 +4,7 @@ export const Squares = ({wordGuess}) => {
 
     return (
         <div className="square">
-            <p></p>
+            {wordGuess[1]}
         </div>
     )
 }
